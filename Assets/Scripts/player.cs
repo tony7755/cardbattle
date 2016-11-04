@@ -4,12 +4,12 @@ using System.Collections;
 public class player : MonoBehaviour {
 
     private int health;
-    private int mana;
+    private int pip;
 
-    public player (int iHealth, int iMana)
+    public player (int iHealth, int iPip)
     {
         health = iHealth;
-        mana = iMana;
+        pip = iPip;
     }
 
     public bool isAlive()
@@ -22,9 +22,9 @@ public class player : MonoBehaviour {
         health -= damage;
     }
 
-    public void gainMana(int gMana)
+    public void gainPip(int gPip)
     {
-        mana += gMana;
+        pip += gPip;
     }
 
     public int healthLevel()
@@ -32,9 +32,9 @@ public class player : MonoBehaviour {
         return health;
     }
 
-    public int manaLevel()
+    public int pipLevel()
     {
-        return mana;
+        return pip;
     }
 
 	// Use this for initialization
