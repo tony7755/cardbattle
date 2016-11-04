@@ -1,12 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class player : MonoBehaviour {
+public class Player : MonoBehaviour {
 
     private int health;
     private int pip;
 
-    public player (int iHealth, int iPip)
+    public Player (int iHealth, int iPip)
     {
         health = iHealth;
         pip = iPip;
