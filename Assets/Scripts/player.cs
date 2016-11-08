@@ -5,7 +5,7 @@ public class Player : MonoBehaviour {
 
     private int health;
     private int pip;
-
+    
     public Player (int iHealth, int iPip)
     {
         health = iHealth;
