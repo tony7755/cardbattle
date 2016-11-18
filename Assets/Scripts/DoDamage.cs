@@ -1,9 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class NewBehaviourScript1 : MonoBehaviour {
+public class DoDamage : MonoBehaviour {
 
-    public static int do_damage(double chance, int damage)
+    public static int doDamage(double chance, int damage)
     {
         if (Random.value > chance)
             return 0;

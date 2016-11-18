@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class Card : MonoBehaviour {
-	private string name;
+	private string cardName;
 	private double chance;
 	private int damage;
 	private int pip;
@@ -11,7 +11,7 @@ public class Card : MonoBehaviour {
 	/* Constructor */
 	public Card (string name1, double chance1, int damage1, int pip1)
 	{
-		name = name1;
+		cardName = name1;
 		chance = chance1;
 		damage = damage1;
 		pip = pip1;
