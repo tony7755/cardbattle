@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System.Collections.Generic;
 using System.Collections;
 
 public class Hand : MonoBehaviour {
@@ -19,6 +20,11 @@ public class Hand : MonoBehaviour {
     {
         Card card = deck.draw();
         hand.Add(card);
+    }
+
+    public ArrayList showHand()
+    {
+        return hand;
     }
 
 	// Use this for initialization

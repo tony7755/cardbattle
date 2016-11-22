@@ -39,7 +39,7 @@ public class Player : MonoBehaviour {
         return pip;
     }
 
-    public void playCard(Card card, Player target, bool heal = false) // damge (card(positive damage), opponent); drain (heal = true); heal(card, self);
+    public void playCard(Card card, Player target) // damge (card(positive damage), opponent); drain (heal = true); heal(card, self);
     {
         int pipNeed = card.getPip();
         if (pip >= pipNeed)
@@ -48,8 +48,11 @@ public class Player : MonoBehaviour {
             int damage = card.getDamage();
             pip -= pipNeed;
             int damageMake = DoDamage.doDamage(chance, damage);
-            target.takeDamage(damageMake);
-            if (heal)
+            if (damageMake >= 0)
+                target.takeDamage(damageMake);
+            else
+                takeDamage(damageMake); //heal self
+            if (card.isHeal())
                 health += damageMake / 2;
             health = Mathf.Min(health, maxHealth);
         }
