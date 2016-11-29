@@ -115,12 +115,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 362156604}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c2e06faa52f445541be84150f21568d6, type: 3}
+  m_Script: {fileID: 11500000, guid: 0f7e8f4e3289a9d44a4df3158f637f40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 500
+  health: 0
   pip: 0
-  maxHealth: 500
+  maxHealth: 0
   pipIncrease: {fileID: 1522557713}
   hitThunderShock: {fileID: 1717857708}
   useThunderShock: {fileID: 1109615832}
@@ -990,12 +990,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1167047345}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c2e06faa52f445541be84150f21568d6, type: 3}
+  m_Script: {fileID: 11500000, guid: 0f7e8f4e3289a9d44a4df3158f637f40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 500
+  health: 0
   pip: 0
-  maxHealth: 500
+  maxHealth: 0
   pipIncrease: {fileID: 1944313761}
   hitThunderShock: {fileID: 1109615832}
   useThunderShock: {fileID: 1717857708}
@@ -1003,7 +1003,7 @@ MonoBehaviour:
   useFlamethrower: {fileID: 1471499694}
   morningSun: {fileID: 1478247895}
   hitOblivionWing: {fileID: 894305576}
-  useOblivionWing: {fileID: 1335166475}
+  useOblivionWing: {fileID: 894305576}
 --- !u!1 &1227364680
 GameObject:
   m_ObjectHideFlags: 0
