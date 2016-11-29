@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour {
 
@@ -21,6 +22,15 @@ public class GameManager : MonoBehaviour {
     public UnityEngine.UI.Button backButton;
     public UnityEngine.UI.Button replayButton;
     public UnityEngine.UI.Button finishTurnButton;
+    public UnityEngine.UI.Button card11;
+    public UnityEngine.UI.Button card12;
+    public UnityEngine.UI.Button card13;
+    public UnityEngine.UI.Button card14;
+    public UnityEngine.UI.Button card21;
+    public UnityEngine.UI.Button card22;
+    public UnityEngine.UI.Button card23;
+    public UnityEngine.UI.Button card24;
+
 
 
     void switchPlayer()
@@ -57,7 +67,10 @@ public class GameManager : MonoBehaviour {
         replayButton.gameObject.SetActive(false);
         hand1 = new Hand(6, deck1);
         hand2 = new Hand(6, deck2);
-	}
+
+        //Button finish = finishTurnButton.GetComponent<Button>();
+       // finish.onClick.AddListener(switchPlayer);
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -66,6 +79,28 @@ public class GameManager : MonoBehaviour {
         {
             backButton.gameObject.SetActive(true);
             replayButton.gameObject.SetActive(true);
+        }
+        if (currentPlayer == player1)
+        {
+            card11.gameObject.SetActive(true);
+            card12.gameObject.SetActive(true);
+            card13.gameObject.SetActive(true);
+            card14.gameObject.SetActive(true);
+            card21.gameObject.SetActive(false);
+            card22.gameObject.SetActive(false);
+            card23.gameObject.SetActive(false);
+            card24.gameObject.SetActive(false);
+        }
+        else
+        {
+            card11.gameObject.SetActive(false);
+            card12.gameObject.SetActive(false);
+            card13.gameObject.SetActive(false);
+            card14.gameObject.SetActive(false);
+            card21.gameObject.SetActive(true);
+            card22.gameObject.SetActive(true);
+            card23.gameObject.SetActive(true);
+            card24.gameObject.SetActive(true);
         }
 	}
 }
