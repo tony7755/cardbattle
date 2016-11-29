@@ -45,7 +45,7 @@ public class GameManager : MonoBehaviour {
             deck.addCard(new global::Card("Maga Drain", 0.85, 50, 2, true));
             deck.addCard(new global::Card("Thunder", 0.1, 300, 1, false));
             deck.addCard(new global::Card("Super Potion", 1, -400, 2, false));
-            deck.addCard(new global::Card("Fire Spin", ))
+           //deck.addCard(new global::Card("Fire Spin", ))
         }
     }
 
